@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/results-summary-component-5MMqleARQi](https://www.frontendmentor.io/solutions/results-summary-component-5MMqleARQi)
+- Live Site URL: [https://results-summary-component-prj.netlify.app](https://results-summary-component-prj.netlify.app)
 
 ## My process
 
@@ -102,8 +102,8 @@ Another example from the code:
 
 ### Continued development
 
-I will keep improving my HTML and CSS skills, and learning new tricks and techniques.
-I will focusing specifically on mastering CSS Flexbox and Grid techniques and responsive web design.
+I will keep improving my HTML and CSS skills and learning new tricks and techniques.
+I will be focusing specifically on mastering CSS Flexbox and Grid techniques and responsive web design.
 
 ## Author
 
