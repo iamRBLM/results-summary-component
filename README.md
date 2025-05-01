@@ -60,13 +60,6 @@ Here some example from the code:
 ```
 
 ```css
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  align-items: center;
-}
-
 .card-summary .card-summary-content {
   justify-content: space-between;
   width: 288px;
@@ -74,6 +67,12 @@ Here some example from the code:
   margin-bottom: 16px;
   padding: 0 16px;
   border-radius: 12px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 ```
 
