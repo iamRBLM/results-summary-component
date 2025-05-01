@@ -53,7 +53,7 @@ In this way the CSS elements are not fill with bunch of different CSS properties
 
 I will keep developing this way of writing HTML and CSS - it also make it easy to read the code.
 
-Here some example from the code:
+Here are some examples from the code:
 
 ```html
 <div class="card-summary-content flex bg-red</>
