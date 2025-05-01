@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --red-text: hsl(0, 100%, 67%);
+  --orange-text: hsl(39, 100%, 56%);
+  --green-text: hsl(166, 100%, 37%);
+  --blue-text: hsl(234, 85%, 45%);
+  --light-blue-text: hsl(241, 100%, 89%);
+  --gray-text: hsl(224, 30%, 27%);
+  --trnsp-gray-text: hsla(224, 30%, 27%, 0.5);
+  --red-bg: hsla(0, 100%, 95%, 0.5);
+  --orange-bg: hsla(39, 100%, 95%, 0.5);
+  --green-bg: hsla(166, 100%, 95%, 0.5);
+  --blue-bg: hsla(234, 85%, 95%, 0.5);
+  --dark-bg: hsl(224, 30%, 27%);
+  --light-purple-bg: hsl(252, 100%, 67%);
+  --strong-purple-bg: hsl(241, 81%, 54%);
+  --dark-purple-bg: hsla(256, 72%, 46%, 1);
+  --strong-white-bg: hsl(221, 100%, 96%);
+  --trnsp-purple-bg: hsla(241, 81%, 54%, 0);
+  --trnsp-blue-bg: hsla(224, 82%, 58%, 0.15);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-size: 18px;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: var(--gray-text);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 18px;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background: linear-gradient(
+    to top,
+    var(--strong-purple-bg),
+    var(--light-purple-bg)
+  );
+}
+
+.btn-dark {
+  color: var(--white);
+  background-color: var(--dark-bg);
+}
+
+/* ------------------------------------- */
+/* Layout */
+/* ------------------------------------- */
+.container {
+  width: 736px;
+  height: 512px;
+  border-radius: 32px;
+  box-shadow: 0px 30px 60px var(--trnsp-blue-bg);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 100vh;
+  background-color: var(--strong-white-bg);
+}
+
+/* ------------------------------------- */
+/* Result Section */
+/* ------------------------------------- */
+.card-result {
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
+}
+
+.card-result .card-result-header h1 {
+  margin: 0;
+  padding: 38px 0 35px;
+}
+
+.card-result .card-result-circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to top,
+    var(--trnsp-purple-bg),
+    var(--dark-purple-bg)
+  );
+}
+
+.card-result .card-result-circle h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-result .card-result-circle h3 span {
+  display: block;
+  font-weight: 700;
+}
+
+.card-result .card-result-info h2 {
+  padding: 28px 0 14px;
+}
+
+.card-result .card-result-info p {
+  width: 260px;
+  margin: auto;
+}
+
+/* ------------------------------------- */
+/* Summary Section */
+/* ------------------------------------- */
+.card-summary .card-summary-header {
+  position: relative;
+  top: -20px;
+}
+
+.card-summary .card-summary-subheader img {
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+}
+.card-summary .card-summary-content {
+  justify-content: space-between;
+  width: 288px;
+  height: 56px;
+  margin-bottom: 16px;
+  padding: 0 16px;
+  border-radius: 12px;
+}
+
+.card-summary .card-summary-score p span {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.card-summary .card-summary-btn {
+  margin-top: 41px;
+}
+
+/* ------------------------------------- */
+/* Background Color */
+/* ------------------------------------- */
+.bg-purple-gradient {
+  background-image: linear-gradient(
+    to top,
+    var(--strong-purple-bg),
+    var(--light-purple-bg)
+  );
+}
+
+.bg-red {
+  background-color: var(--red-bg);
+}
+
+.bg-orange {
+  background-color: var(--orange-bg);
+}
+
+.bg-green {
+  background-color: var(--green-bg);
+}
+
+.bg-blue {
+  background-color: var(--blue-bg);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+/* ------------------------------------- */
+/* Text Color */
+/* ------------------------------------- */
+.text-red {
+  color: var(--red-text);
+  font-weight: 500;
+}
+
+.text-orange {
+  color: var(--orange-text);
+  font-weight: 500;
+}
+
+.text-green {
+  color: var(--green-text);
+  font-weight: 500;
+}
+
+.text-blue {
+  color: var(--blue-text);
+  font-weight: 500;
+}
+
+.text-purple-trnsp {
+  color: var(--light-blue-text);
+}
+
+.text-gray-trnsp {
+  color: var(--trnsp-gray-text);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+/* ------------------------------------- */
+/* Font Sizes */
+/* ------------------------------------- */
+.text-xl {
+  font-size: 4rem;
+}
+
+.text-lg {
+  font-size: 1.7rem;
+}
+
+.text-md {
+  font-size: 1.3rem;
+}
+
+.text-normal {
+  font-size: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+/* ------------------------------------- */
+/* Media Query */
+/* ------------------------------------- */
+@media (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .card {
+    height: 100%;
+  }
+
+  .card-result {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .card-result .card-result-info p {
+    width: 300px;
+    margin-bottom: 40px;
+  }
+
+  .card-summary .card-summary-header {
+    top: 0px;
+  }
+
+  .card-summary .card-summary-header h2 {
+    margin: 24px 0;
+  }
+
+  .card-summary {
+    width: 100%;
+    padding: 0 35px;
+  }
+
+  .card-summary .card-summary-content {
+    width: 100%;
+  }
+
+  .card-summary .card-summary-btn {
+    margin-bottom: 30px;
+  }
+}

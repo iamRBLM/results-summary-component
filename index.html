@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Results Summary Component</title>
+  </head>
+  <body>
+    <main>
+      <section class="card text-center flex bg-white">
+        <div class="container grid">
+          <!-- card result -->
+          <section class="card-result bg-purple-gradient">
+            <!-- result header -->
+            <header class="card-result-header">
+              <h1 class="text-md text-purple-trnsp">Your Result</h1>
+            </header>
+            <!-- result score -->
+            <div class="card-result-score">
+              <div class="card-result-circle">
+                <h3 class="text-xl text-white">
+                  76 <span class="text-normal text-purple-trnsp">of 100</span>
+                </h3>
+              </div>
+            </div>
+            <!-- result info -->
+            <div class="card-result-info">
+              <h2 class="text-lg text-white">Great</h2>
+              <p class="text-purple-trnsp">
+                You scored higher than 65% of the people who have taken these
+                tests.
+              </p>
+            </div>
+          </section>
+
+          <!-- card summary -->
+          <section class="card-summary">
+            <!-- summary header -->
+            <header class="card-summary-header">
+              <h2 class="text-md text-left">Summary</h2>
+            </header>
+            <!-- reaction -->
+            <div class="card-summary-content flex bg-red">
+              <div class="card-summary-subheader flex">
+                <img class="score-icon" src="images/icon-reaction.svg" alt="" />
+                <h3 class="text-red">Reaction</h3>
+              </div>
+              <div class="card-summary-score">
+                <p class="text-bold">
+                  80 <span class="text-gray-trnsp">/ 100</span>
+                </p>
+              </div>
+            </div>
+            <!-- memory -->
+            <div class="card-summary-content flex bg-orange">
+              <div class="card-summary-subheader flex">
+                <img class="score-icon" src="images/icon-memory.svg" alt="" />
+                <h3 class="text-orange">Memory</h3>
+              </div>
+              <div class="card-summary-score">
+                <p class="text-bold">
+                  92 <span class="text-gray-trnsp">/ 100</span>
+                </p>
+              </div>
+            </div>
+            <!-- verbal -->
+            <div class="card-summary-content flex bg-green">
+              <div class="card-summary-subheader flex">
+                <img class="score-icon" src="images/icon-verbal.svg" alt="" />
+                <h3 class="text-green">Verbal</h3>
+              </div>
+              <div class="card-summary-score">
+                <p class="text-bold">
+                  61 <span class="text-gray-trnsp">/ 100</span>
+                </p>
+              </div>
+            </div>
+            <!-- visual -->
+            <div class="card-summary-content flex bg-blue">
+              <div class="card-summary-subheader flex">
+                <img class="score-icon" src="images/icon-visual.svg" alt="" />
+                <h3 class="text-blue">Visual</h3>
+              </div>
+              <div class="card-summary-score">
+                <p class="text-bold">
+                  72 <span class="text-gray-trnsp">/ 100</span>
+                </p>
+              </div>
+            </div>
+            <!-- button -->
+            <div class="card-summary-btn">
+              <a href="#" class="btn btn-dark text-bold">Continue</a>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
